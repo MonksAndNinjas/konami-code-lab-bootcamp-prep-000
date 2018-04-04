@@ -6,6 +6,10 @@ function init() {
   // check for 'keydown' events
   // const key === alaphabet[index]
   //(input?) addEventListener('keydown', function(e))
-  
+  const main = document.body
+ 
+  //main.addEventListener('click', function(event) {
+  //alert('I was clicked!')
+})
   console.log(e.which)
 }
