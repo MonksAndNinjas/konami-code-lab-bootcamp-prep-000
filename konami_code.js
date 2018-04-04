@@ -6,7 +6,16 @@ function init() {
   // check for 'keydown' events
   // const key === alaphabet[index]
   //(input?) addEventListener('keydown', function(e))
-  if (key)
-})
-  console.log(e.which)
+  const key = parseInt(e.detail || e.which)
+  
+  if (key === code[index]) {
+    index++
+    
+    if (index === code.length) {
+      aler("Hurray!")
+      index = 0
+    }
+  } else {
+    index = 0
+  }  
 }
