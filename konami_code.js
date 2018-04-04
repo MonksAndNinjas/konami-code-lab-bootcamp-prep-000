@@ -5,7 +5,7 @@ function init() {
   //what's listening (document.body)
   let Input = document.body
   
-  Input.addEventListener('keydown', function(e) {
+  input.addEventListener('keydown', function(e) {
   
     let index = 0
   
@@ -22,3 +22,4 @@ function init() {
       index = 0
     }  
   }
+}
