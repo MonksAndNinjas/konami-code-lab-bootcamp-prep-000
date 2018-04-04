@@ -3,19 +3,22 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 function init() {
   // Write your JavaScript code inside the init() function
   //what's listening (document.body)
-  // check for 'keydown' events
-  // const key === alaphabet[index]
-  //(input?) addEventListener('keydown', function(e))
-  const key = parseInt(e.detail || e.which)
+  let Input = document.body
   
-  if (key === code[index]) {
+  Input.addEventListener('keydown', function(e)) {
+  
+    let index = 0
+  
+    const key = parseInt(e.detail || e.which)
+  
+    if (key === code[index]) {
     index++
     
-    if (index === code.length) {
+      if (index === code.length) {
       aler("Hurray!")
       index = 0
-    }
-  } else {
-    index = 0
-  }  
-}
+      }
+    } else {
+      index = 0
+    }  
+  }
