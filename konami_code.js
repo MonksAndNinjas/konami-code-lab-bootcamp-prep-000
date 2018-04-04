@@ -13,7 +13,7 @@ function init() {
   
     if (key === code[index]) {
     index++
-    
+      control.log(e.detail, e.which)
       if (index === code.length) {
       alert("Hurray!")
       index = 0
