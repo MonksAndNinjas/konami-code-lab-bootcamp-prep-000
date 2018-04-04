@@ -7,5 +7,5 @@ function init() {
   //what's listening (document.body)
   // check for 'keydown' events
   // key = alaphabet[index]
-  input addEventListener('keydown', function(e))
+  //(input?) addEventListener('keydown', function(e))
 }
